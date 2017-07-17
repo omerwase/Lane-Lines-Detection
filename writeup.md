@@ -39,6 +39,8 @@ There are a number of shortcomings in my algorithm:
 
 2) To split Hough lines between left and right I used the middle of the image as the boundary. I believe this will not work well in practice since it assumes the car's camera is pointing towards the middle of the road.
 
+3) Another reason for my algorithm functioning poorly on the challenge video is likely due to the car's hood being visible near the bottom. In general the mask applied in my pipeline is very specific to the positioning of the camera.
+
 ### 3. Suggest possible improvements to your pipeline
 
 The improvements discussed below correspond to the shortcomings described above (numbered respectively):
@@ -46,3 +48,5 @@ The improvements discussed below correspond to the shortcomings described above 
 1) One possible solution to identifying curved lanes would be to treat each Hough line as its own line and find a curved line for which the Hough lines are a tangent. I did not spend too much time on this since there is another project later in the course, which I believe address this issue.
 
 2) Instead of spliting Hough lines based on the middle of the image, they can be split based on their slope. This should somewhat address the issue of the car's camera pointing away from the middle of the road.
+
+3) The camera's position in the car will need to be fixed. If the hood of the car is part of the image it will need to be removed through the mask.
