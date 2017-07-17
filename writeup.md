@@ -2,8 +2,6 @@
 
 ## Submidtted by Omer Waseem on 16-07-2017
 
-[//]: # (Image References)
-
 [image1]: ./test_images_output/hough_lines/solidYellowCurve.jpg "Hough lines on solid yellow curve"
 
 [image2]: ./test_images_output/polyfit_lines/solidYellowCurve.jpg "Polyfit lines on solid yellow curve"
@@ -30,7 +28,7 @@ I split left and right lines based on the middle of the image (max(x-axis)/2). B
 
 I then modified the function to split lines on each side into seperate arrays. Two of x values (for left and right side) and two of y values. These arrays were used in polyfit() to obtain a line of best fit for each side, as seen in the image below.
 
-[alt text][image2]
+![alt text][image2]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
