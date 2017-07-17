@@ -4,9 +4,9 @@
 
 [//]: # (Image References)
 
-[image1]: ./test_image_output/hough_lines/solidYellowCurve.jpg "Hough lines on solid yellow curve"
+[image1]: ./test_images_output/hough_lines/solidYellowCurve.jpg "Hough lines on solid yellow curve"
 
-[image2]: ./test_image_output/polyfit_lines/solidYellowCurve.jpg "Polyfit lines on solid yellow curve"
+[image2]: ./test_images_output/polyfit_lines/solidYellowCurve.jpg "Polyfit lines on solid yellow curve"
 
 ### Reflection
 
